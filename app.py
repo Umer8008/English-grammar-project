@@ -5,6 +5,7 @@ from src.grammar_checker import check_grammar
 from src.visualizer import render_dependency_tree
 from src.utils import calculate_text_statistics, POS_DESCRIPTIONS, get_pos_full_name
 
+
 # ── Page configuration ────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="English Grammar Analyzer",
