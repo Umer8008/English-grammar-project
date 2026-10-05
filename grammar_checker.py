@@ -1,6 +1,6 @@
 def _conjugate_3rd_singular(lemma: str) -> str:
     """
-    Returns the 3rd-person singular present tense form of a verb.
+    Returns the 3rd-person singular present tense form of a verb .
     Handles common English spelling rules:
       - goes, does, has
       - verbs ending in -s, -x, -z, -ch, -sh → add -es
