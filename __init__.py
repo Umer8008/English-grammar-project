@@ -1,3 +1,3 @@
 """
-Source package for the English Grammar Analyzer.
+Source package for the English Grammar Analyzer .
 """
