@@ -1,0 +1,272 @@
+/* ============================================================
+   English Grammar Analyzer — Professional Theme
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Base ───────────────────────────────────────────────────── */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Dark gradient background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #e2e8f0;
+}
+
+/* Main container */
+.main .block-container {
+    padding: 2rem 3rem 4rem 3rem;
+    max-width: 1100px;
+}
+
+/* ── Header Banner ──────────────────────────────────────────── */
+.app-header {
+    background: linear-gradient(135deg, #1e40af 0%, #3b0764 100%);
+    border-radius: 16px;
+    padding: 2.5rem 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 20px 60px rgba(30, 64, 175, 0.4);
+    border: 1px solid rgba(147, 197, 253, 0.15);
+}
+
+.app-header h1 {
+    font-size: 2.4rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    margin: 0 0 0.5rem 0 !important;
+    letter-spacing: -0.5px;
+}
+
+.app-header p {
+    color: #bfdbfe !important;
+    font-size: 1.05rem;
+    margin: 0 !important;
+    opacity: 0.9;
+}
+
+/* ── Input Card ─────────────────────────────────────────────── */
+.input-card {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 14px;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+/* ── Streamlit Text Area ────────────────────────────────────── */
+.stTextArea textarea {
+    background: #0f172a !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(148, 163, 184, 0.25) !important;
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 1rem !important;
+    padding: 1rem !important;
+}
+.stTextArea textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2) !important;
+}
+.stTextArea label {
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.stButton > button {
+    background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.65rem 1.8rem !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.02em !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35) !important;
+}
+.stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5) !important;
+}
+
+/* ── Tabs ───────────────────────────────────────────────────── */
+.stTabs [data-baseweb="tab-list"] {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border-radius: 12px !important;
+    padding: 4px !important;
+    border: 1px solid rgba(148, 163, 184, 0.1) !important;
+    gap: 4px !important;
+}
+.stTabs [data-baseweb="tab"] {
+    background: transparent !important;
+    color: #94a3b8 !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1.2rem !important;
+    transition: all 0.2s ease !important;
+}
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+    color: white !important;
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.4) !important;
+}
+.stTabs [data-baseweb="tab-panel"] {
+    padding: 1.5rem 0 !important;
+}
+
+/* ── Metric Cards ───────────────────────────────────────────── */
+[data-testid="metric-container"] {
+    background: rgba(30, 41, 59, 0.7) !important;
+    border: 1px solid rgba(148, 163, 184, 0.12) !important;
+    border-radius: 12px !important;
+    padding: 1.2rem 1.4rem !important;
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease;
+}
+[data-testid="metric-container"]:hover {
+    transform: translateY(-2px);
+    border-color: rgba(59, 130, 246, 0.3) !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: #60a5fa !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+    color: #94a3b8 !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500 !important;
+}
+
+/* ── Subheaders ─────────────────────────────────────────────── */
+h2, h3 {
+    color: #e2e8f0 !important;
+}
+.stMarkdown h3 {
+    border-left: 3px solid #3b82f6;
+    padding-left: 0.75rem;
+    color: #93c5fd !important;
+}
+
+/* ── DataFrames / Tables ────────────────────────────────────── */
+.stDataFrame {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(148, 163, 184, 0.12) !important;
+}
+.stDataFrame thead th {
+    background: rgba(37, 99, 235, 0.25) !important;
+    color: #93c5fd !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.06em !important;
+    padding: 0.75rem 1rem !important;
+}
+.stDataFrame tbody td {
+    color: #cbd5e1 !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.07) !important;
+    padding: 0.65rem 1rem !important;
+}
+.stDataFrame tbody tr:hover td {
+    background: rgba(59, 130, 246, 0.08) !important;
+}
+
+/* ── Alert Boxes ────────────────────────────────────────────── */
+[data-testid="stAlert"] {
+    border-radius: 10px !important;
+    border-left-width: 4px !important;
+}
+
+/* ── Grammar Issue Cards ────────────────────────────────────── */
+.issue-card {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    border-left: 4px solid #f59e0b;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.2rem;
+    backdrop-filter: blur(6px);
+}
+.issue-card .issue-title {
+    font-weight: 600;
+    color: #fbbf24;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+.issue-card .issue-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+}
+.issue-card .label {
+    color: #64748b;
+    font-weight: 500;
+    min-width: 90px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+.issue-card .original {
+    color: #f87171;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+.issue-card .suggestion {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* ── POS Badge ──────────────────────────────────────────────── */
+.pos-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 99px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* ── Section divider ────────────────────────────────────────── */
+hr {
+    border-color: rgba(148, 163, 184, 0.12) !important;
+    margin: 1.5rem 0 !important;
+}
+
+/* ── Expander ───────────────────────────────────────────────── */
+.streamlit-expanderHeader {
+    background: rgba(30, 41, 59, 0.6) !important;
+    border-radius: 8px !important;
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+}
+.streamlit-expanderContent {
+    background: rgba(15, 23, 42, 0.5) !important;
+    border-radius: 0 0 8px 8px !important;
+    border: 1px solid rgba(148, 163, 184, 0.1) !important;
+}
+
+/* ── Spinner ────────────────────────────────────────────────── */
+.stSpinner > div {
+    border-top-color: #3b82f6 !important;
+}
